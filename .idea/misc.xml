@@ -3,8 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/drawable/primary_button.xml" value="0.20052083333333334" />
         <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/drawable/primary_button_background.xml" value="0.22" />
+        <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/drawable/primary_button_default.xml" value="0.20052083333333334" />
+        <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/drawable/primary_button_disabled.xml" value="0.20052083333333334" />
+        <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/drawable/primary_button_focus.xml" value="0.20052083333333334" />
+        <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/drawable/primary_button_focused.xml" value="0.20052083333333334" />
+        <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/drawable/secondary_button.xml" value="0.20052083333333334" />
         <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/drawable/secondary_button_background.xml" value="0.20052083333333334" />
+        <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/drawable/secondary_button_default.xml" value="0.20052083333333334" />
+        <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/drawable/secondary_button_disabled.xml" value="0.19743589743589743" />
+        <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/drawable/secondary_button_focused.xml" value="0.20052083333333334" />
         <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/layout/activity_getting_started.xml" value="0.22" />
       </map>
     </option>

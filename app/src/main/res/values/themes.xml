@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.ZonaEgg" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorPrimary">@color/orange_500</item>
+        <item name="colorPrimaryVariant">@color/orange_700</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -12,5 +12,15 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="neutral0">#FF1B1B1B</item>
+        <item name="neutral1">#FF666666</item>
+        <item name="neutral2">#FF828282</item>
+        <item name="neutral3">#FFABABAB</item>
+        <item name="neutral4">#FFC4C4C4</item>
+        <item name="neutral5">#FFE1E1E1</item>
+        <item name="neutral6">#FFEBEBEB</item>
+        <item name="neutral7">#FFF3F3F3</item>
+        <item name="neutral8">#FFF9F9F9</item>
+        <item name="neutral9">#FFFFFFFF</item>
     </style>
 </resources>

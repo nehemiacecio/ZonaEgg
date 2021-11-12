@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="neutral0" format="reference|color" />
+    <attr name="neutral1" format="reference|color" />
+    <attr name="neutral2" format="reference|color" />
+    <attr name="neutral3" format="reference|color" />
+    <attr name="neutral4" format="reference|color" />
+    <attr name="neutral5" format="reference|color" />
+    <attr name="neutral6" format="reference|color" />
+    <attr name="neutral7" format="reference|color" />
+    <attr name="neutral8" format="reference|color" />
+    <attr name="neutral9" format="reference|color" />
+</resources>
