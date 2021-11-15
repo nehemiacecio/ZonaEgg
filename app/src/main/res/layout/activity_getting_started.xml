@@ -8,7 +8,7 @@
     tools:context=".GettingStartedActivity">
 
     <ImageView
-        android:id="@+id/imgSwipe"
+        android:id="@+id/gettingStarted_imgSwipe"
         android:layout_width="match_parent"
         android:layout_height="440dp"
         android:background="@color/orange_500"
@@ -20,13 +20,13 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/btnGettingStarted"
+        app:layout_constraintBottom_toTopOf="@+id/gettingStarted_btnGettingStarted"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgSwipe">
+        app:layout_constraintTop_toBottomOf="@+id/gettingStarted_imgSwipe">
 
         <TextView
-            android:id="@+id/tvHeader"
+            android:id="@+id/gettingStarted_tvHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="40dp"
@@ -35,13 +35,13 @@
             android:text="Lorem ipsum dolor sit amet"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/tvBody"
+            app:layout_constraintBottom_toTopOf="@+id/gettingStarted_tvBody"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tvBody"
+            android:id="@+id/gettingStarted_tvBody"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
@@ -51,10 +51,10 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvHeader" />
+            app:layout_constraintTop_toBottomOf="@+id/gettingStarted_tvHeader" />
     </androidx.constraintlayout.widget.ConstraintLayout>
     <Button
-        android:id="@+id/btnGettingStarted"
+        android:id="@+id/gettingStarted_btnGettingStarted"
         android:text="Get started"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
