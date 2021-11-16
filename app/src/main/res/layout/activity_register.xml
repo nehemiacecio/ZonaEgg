@@ -8,7 +8,7 @@
     tools:context=".GettingStartedActivity">
 
     <ImageButton
-        android:id="@+id/login_btnBack"
+        android:id="@+id/register_btnBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -19,57 +19,102 @@
         app:layout_constraintTop_toTopOf="parent"
         app:tint="?colorPrimary" />
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/login_constraintLayoutHeader"
+        android:id="@+id/register_constraintLayoutHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_btnBack">
+        app:layout_constraintTop_toBottomOf="@+id/register_btnBack">
 
         <TextView
-            android:id="@+id/login_tvHeader"
+            android:id="@+id/register_tvHeader"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Login"
+            android:text="Register"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/login_tvBody"
+            app:layout_constraintBottom_toTopOf="@+id/register_tvBody"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/login_tvBody"
+            android:id="@+id/register_tvBody"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="New user?"
+            android:text="Already have an account?"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/login_tvHeader" />
+            app:layout_constraintTop_toBottomOf="@+id/register_tvHeader" />
 
         <TextView
-            android:id="@+id/login_tvBody2"
+            android:id="@+id/register_tvBody2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="4dp"
-            android:text="Create an account"
+            android:text="Sign in"
             android:textColor="@color/blue_500"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/login_tvBody"
-            app:layout_constraintTop_toBottomOf="@+id/login_tvHeader" />
+            app:layout_constraintStart_toEndOf="@+id/register_tvBody"
+            app:layout_constraintTop_toBottomOf="@+id/register_tvHeader" />
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/login_constraintLayoutEmail"
+        android:id="@+id/register_constraintLayoutUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_constraintLayoutHeader">
+        app:layout_constraintTop_toBottomOf="@+id/register_constraintLayoutHeader">
 
         <TextView
-            android:id="@+id/login_tvEmail"
+            android:id="@+id/register_tvUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/register_etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="-4dp"
+            android:layout_marginStart="-4dp"
+            android:hint="Enter your username"
+            android:inputType="textEmailAddress"
+            android:textSize="14sp"
+            android:importantForAutofill="no"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/register_tvUsername"
+            style="@style/formEditText" />
+
+        <TextView
+            android:id="@+id/register_tvUsernameError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Invalid input entered"
+            android:textColor="?colorPrimary"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/register_etUsername"
+            tools:visibility="visible" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/register_constraintLayoutEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_constraintLayoutUsername">
+
+        <TextView
+            android:id="@+id/register_tvEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Email"
@@ -78,7 +123,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/login_etEmail"
+            android:id="@+id/register_etEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="-4dp"
@@ -89,11 +134,11 @@
             android:importantForAutofill="no"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/login_tvEmail"
+            app:layout_constraintTop_toBottomOf="@id/register_tvEmail"
             style="@style/formEditText" />
 
         <TextView
-            android:id="@+id/login_tvEmailError"
+            android:id="@+id/register_tvEmailError"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Invalid input entered"
@@ -101,20 +146,20 @@
             android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/login_etEmail"
+            app:layout_constraintTop_toBottomOf="@id/register_etEmail"
             tools:visibility="visible" />
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/login_constraintLayoutPassword"
+        android:id="@+id/register_constraintLayoutPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_constraintLayoutEmail">
+        app:layout_constraintTop_toBottomOf="@+id/register_constraintLayoutEmail">
 
         <TextView
-            android:id="@+id/login_tvPassword"
+            android:id="@+id/register_tvPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Password"
@@ -123,7 +168,7 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
-            android:id="@+id/login_etPassword"
+            android:id="@+id/register_etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginEnd="-4dp"
@@ -134,11 +179,11 @@
             android:importantForAutofill="no"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/login_tvPassword"
+            app:layout_constraintTop_toBottomOf="@id/register_tvPassword"
             style="@style/formEditText" />
 
         <TextView
-            android:id="@+id/login_tvPasswordError"
+            android:id="@+id/register_tvPasswordError"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Invalid input entered"
@@ -146,16 +191,16 @@
             android:visibility="invisible"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/login_etPassword"
+            app:layout_constraintTop_toBottomOf="@id/register_etPassword"
             tools:visibility="visible" />
     </androidx.constraintlayout.widget.ConstraintLayout>
     <Button
-        android:id="@+id/login_btnLogin"
+        android:id="@+id/register_btnRegister"
         android:layout_marginTop="40dp"
-        android:text="Continue"
+        android:text="Create an account"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/login_constraintLayoutPassword"
+        app:layout_constraintTop_toBottomOf="@id/register_constraintLayoutPassword"
         style="@style/primaryButton"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
