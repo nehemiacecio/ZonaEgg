@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="440dp"
         android:background="@color/orange_500"
-        android:contentDescription="Image"
+        android:contentDescription="@string/illustration_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -32,7 +32,7 @@
             android:layout_marginHorizontal="40dp"
             android:gravity="center"
             android:padding="4dp"
-            android:text="Lorem ipsum dolor sit amet"
+            android:text="@string/lorem_ipsum"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/gettingStarted_tvBody"
@@ -47,7 +47,7 @@
             android:layout_marginHorizontal="20dp"
             android:gravity="center"
             android:padding="4dp"
-            android:text="Lorem ipsum dolor sit amet"
+            android:text="@string/lorem_ipsum"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -55,7 +55,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
     <Button
         android:id="@+id/gettingStarted_btnGettingStarted"
-        android:text="Get started"
+        android:text="@string/get_started"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
