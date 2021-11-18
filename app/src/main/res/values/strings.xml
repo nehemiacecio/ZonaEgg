@@ -1,8 +1,9 @@
 <resources>
     <!-- Global -->
     <string name="app_name">ZonaEgg</string>
-    <string name="lorem_ipsum">Lorem ipsum dolor sit amet</string>
-    <string name="back_button">Back button</string>
+    <string name="lorem_ipsum">Lorem ipsum</string>
+    <string name="lorem_ipsum_long">Lorem ipsum dolor sit amet</string>
+    <string name="back">Back</string>
     <string name="invalid_input_entered">Invalid input entered</string>
     <string name="username">Username</string>
     <string name="enter_your_username">Enter your username</string>
@@ -23,5 +24,17 @@
     <string name="register">Register</string>
     <string name="already_have_an_account_question">Already have an account?</string>
     <string name="create_an_account">Create an account</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="toggle_dark_theme">Toggle Dark Theme</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="view_profile">View Profile</string>
+    <string name="getting_started">Getting Started</string>
+    <string name="homepage">Homepage</string>
+    <string name="popular_places">Popular Places</string>
+    <string name="your_favorites">Your Favorites</string>
+    <string name="credits">Credits</string>
+    <string name="logout">Logout</string>
 
 </resources>

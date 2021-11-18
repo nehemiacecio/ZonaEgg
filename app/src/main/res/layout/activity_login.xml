@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="20dp"
     tools:context=".GettingStartedActivity">
 
     <ImageButton
@@ -12,16 +11,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:src="@drawable/ic_back_arrow"
+        android:layout_marginStart="20dp"
+        android:src="@drawable/ic_arrow_back"
         android:background="@drawable/primary_back_button"
-        android:contentDescription="@string/back_button"
+        android:contentDescription="@string/back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:tint="?colorPrimary" />
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/login_constraintLayoutHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -59,10 +61,12 @@
             app:layout_constraintStart_toEndOf="@+id/login_tvBody"
             app:layout_constraintTop_toBottomOf="@+id/login_tvHeader" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/login_constraintLayoutEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -104,11 +108,13 @@
             app:layout_constraintTop_toBottomOf="@id/login_etEmail"
             tools:visibility="visible" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/login_constraintLayoutPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/login_constraintLayoutEmail">
@@ -149,8 +155,10 @@
             app:layout_constraintTop_toBottomOf="@id/login_etPassword"
             tools:visibility="visible" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <Button
         android:id="@+id/login_btnLogin"
+        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="40dp"
         android:text="@string/login"
         app:layout_constraintEnd_toEndOf="parent"
