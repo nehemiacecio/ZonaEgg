@@ -10,6 +10,8 @@
         <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/drawable/ic_arrow_next.xml" value="0.20052083333333334" />
         <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/drawable/ic_back_arrow.xml" value="0.20052083333333334" />
         <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/drawable/ic_eye.xml" value="0.20052083333333334" />
+        <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/drawable/ic_image.xml" value="0.20052083333333334" />
+        <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/drawable/ic_launcher_background.xml" value="0.20052083333333334" />
         <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/drawable/ic_moon.xml" value="0.20052083333333334" />
         <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/drawable/primary_back_button.xml" value="0.20052083333333334" />
         <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/drawable/primary_back_button_default.xml" value="0.20052083333333334" />
@@ -28,7 +30,7 @@
         <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/layout/activity_getting_started.xml" value="0.22" />
         <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/layout/activity_login.xml" value="0.22" />
         <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/layout/activity_main.xml" value="0.15625" />
-        <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/layout/activity_register.xml" value="0.4466666666666667" />
+        <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/layout/activity_register.xml" value="0.22" />
         <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/layout/activity_settings.xml" value="0.22" />
       </map>
     </option>
