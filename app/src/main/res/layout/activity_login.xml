@@ -8,26 +8,17 @@
 
     <ImageButton
         android:id="@+id/login_btnBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:src="@drawable/ic_arrow_back"
-        android:background="@drawable/primary_back_button"
         android:contentDescription="@string/back"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:tint="?colorPrimary" />
+        style="@style/primaryBackButton" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/login_constraintLayoutHeader"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_btnBack">
+        app:layout_constraintTop_toBottomOf="@+id/login_btnBack"
+        style="@style/m_top_20">
 
         <TextView
             android:id="@+id/login_tvHeader"
@@ -64,13 +55,10 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/login_constraintLayoutEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_constraintLayoutHeader">
+        app:layout_constraintTop_toBottomOf="@+id/login_constraintLayoutHeader"
+        style="@style/m_top_40">
 
         <TextView
             android:id="@+id/login_tvEmail"
@@ -83,13 +71,8 @@
 
         <EditText
             android:id="@+id/login_etEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="-4dp"
-            android:layout_marginStart="-4dp"
             android:hint="@string/enter_your_email"
             android:inputType="textEmailAddress"
-            android:textSize="14sp"
             android:importantForAutofill="no"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -112,12 +95,10 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/login_constraintLayoutPassword"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_constraintLayoutEmail">
+        app:layout_constraintTop_toBottomOf="@+id/login_constraintLayoutEmail"
+        style="@style/m_top_20">
 
         <TextView
             android:id="@+id/login_tvPassword"
@@ -130,13 +111,8 @@
 
         <EditText
             android:id="@+id/login_etPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="-4dp"
-            android:layout_marginStart="-4dp"
             android:hint="@string/enter_your_password"
             android:inputType="textPassword"
-            android:textSize="14sp"
             android:importantForAutofill="no"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

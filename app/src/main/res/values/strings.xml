@@ -12,6 +12,18 @@
     <string name="password">Password</string>
     <string name="enter_your_password">Enter your password</string>
 
+    <!-- Credits -->
+    <string name="darren_name">Darren Denisson Chandra</string>
+    <string name="darren_nim">00000034810</string>
+    <string name="elfajar_name">Elfajar Bintang Samudera</string>
+    <string name="elfajar_nim">00000037235</string>
+    <string name="gilang_name">Gilang Satria Putra</string>
+    <string name="gilang_nim">00000037741</string>
+    <string name="nehemia_name">Nehemia Cecio Tanjung Jati</string>
+    <string name="nehemia_nim">00000039011</string>
+    <string name="norbertus_name">Norbertus Dewa Rucci</string>
+    <string name="norbertus_nim">00000037417</string>
+
     <!-- Getting Started -->
     <string name="illustration_image">Illustration image</string>
     <string name="get_started">Get Started</string>
