@@ -27,11 +27,13 @@
         <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/drawable/secondary_button_default.xml" value="0.20052083333333334" />
         <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/drawable/secondary_button_disabled.xml" value="0.19743589743589743" />
         <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/drawable/secondary_button_focused.xml" value="0.20052083333333334" />
-        <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/layout/activity_getting_started.xml" value="0.22" />
-        <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/layout/activity_login.xml" value="0.22" />
+        <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/font/oppins.xml" value="0.21458333333333332" />
+        <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/font/poppins.xml" value="0.21458333333333332" />
+        <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/layout/activity_getting_started.xml" value="0.4466666666666667" />
+        <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/layout/activity_login.xml" value="0.4466666666666667" />
         <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/layout/activity_main.xml" value="0.15625" />
-        <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/layout/activity_register.xml" value="0.22" />
-        <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/layout/activity_settings.xml" value="0.22" />
+        <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/layout/activity_register.xml" value="0.4466666666666667" />
+        <entry key="..\:/User/Projects/AndroidStudio/ZonaEgg/app/src/main/res/layout/activity_settings.xml" value="0.4466666666666667" />
       </map>
     </option>
   </component>

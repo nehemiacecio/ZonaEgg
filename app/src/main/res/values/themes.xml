@@ -12,6 +12,9 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <!-- Default font family. -->
+        <item name="fontFamily">@font/poppins</item>
+        <!-- Neutral colors. -->
         <item name="neutral0">#FF1B1B1B</item>
         <item name="neutral1">#FF666666</item>
         <item name="neutral2">#FF828282</item>
