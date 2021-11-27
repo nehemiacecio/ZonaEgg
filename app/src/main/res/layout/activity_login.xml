@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".GettingStartedActivity">
 
+    <!-- Back button -->
     <ImageButton
         android:id="@+id/login_btnBack"
         android:contentDescription="@string/back"
@@ -13,125 +14,100 @@
         app:layout_constraintTop_toTopOf="parent"
         style="@style/primaryBackButton" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/login_constraintLayoutHeader"
+    <!-- Header -->
+    <TextView
+        android:id="@+id/login_tvHeader"
+        android:text="@string/login"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/login_tvBody"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_btnBack"
-        style="@style/m_top_20">
+        app:layout_constraintTop_toBottomOf="@id/login_btnBack"
+        style="@style/m_top_20" />
 
-        <TextView
-            android:id="@+id/login_tvHeader"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/login"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/login_tvBody"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/login_tvBody"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/new_user_question"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_tvHeader" />
 
-        <TextView
-            android:id="@+id/login_tvBody"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/new_user_question"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/login_tvHeader" />
+    <TextView
+        android:id="@+id/login_tvCreateAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/create_an_account"
+        android:textColor="@color/blue_500"
+        app:layout_constraintStart_toEndOf="@id/login_tvBody"
+        app:layout_constraintTop_toBottomOf="@id/login_tvHeader" />
 
-        <TextView
-            android:id="@+id/login_tvBody2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="4dp"
-            android:text="@string/create_an_account"
-            android:textColor="@color/blue_500"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/login_tvBody"
-            app:layout_constraintTop_toBottomOf="@+id/login_tvHeader" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/login_constraintLayoutEmail"
+    <!-- Email -->
+    <TextView
+        android:id="@+id/login_tvEmail"
+        android:text="@string/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_constraintLayoutHeader"
-        style="@style/m_top_40">
+        app:layout_constraintTop_toBottomOf="@id/login_tvBody"
+        style="@style/m_top_40" />
 
-        <TextView
-            android:id="@+id/login_tvEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/email"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <EditText
+        android:id="@+id/login_etEmail"
+        android:hint="@string/enter_your_email"
+        android:inputType="textEmailAddress"
+        android:importantForAutofill="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_tvEmail"
+        style="@style/formEditText" />
 
-        <EditText
-            android:id="@+id/login_etEmail"
-            android:hint="@string/enter_your_email"
-            android:inputType="textEmailAddress"
-            android:importantForAutofill="no"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/login_tvEmail"
-            style="@style/formEditText" />
+    <TextView
+        android:id="@+id/login_tvEmailError"
+        android:text="@string/invalid_input_entered"
+        android:textColor="?colorPrimary"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_etEmail"
+        style="@style/m_horizontal_20"
+        tools:visibility="visible" />
 
-        <TextView
-            android:id="@+id/login_tvEmailError"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/invalid_input_entered"
-            android:textColor="?colorPrimary"
-            android:visibility="invisible"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/login_etEmail"
-            tools:visibility="visible" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Password -->
+    <TextView
+        android:id="@+id/login_tvPassword"
+        android:text="@string/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_tvEmailError"
+        style="@style/m_top_20"/>
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/login_constraintLayoutPassword"
+    <EditText
+        android:id="@+id/login_etPassword"
+        android:hint="@string/enter_your_password"
+        android:inputType="textPassword"
+        android:importantForAutofill="no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/login_tvPassword"
+        style="@style/formEditText" />
+
+    <TextView
+        android:id="@+id/login_tvPasswordError"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/invalid_input_entered"
+        android:textColor="?colorPrimary"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_constraintLayoutEmail"
-        style="@style/m_top_20">
+        app:layout_constraintTop_toBottomOf="@id/login_etPassword"
+        style="@style/m_horizontal_20"
+        tools:visibility="visible" />
 
-        <TextView
-            android:id="@+id/login_tvPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/password"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <EditText
-            android:id="@+id/login_etPassword"
-            android:hint="@string/enter_your_password"
-            android:inputType="textPassword"
-            android:importantForAutofill="no"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/login_tvPassword"
-            style="@style/formEditText" />
-
-        <TextView
-            android:id="@+id/login_tvPasswordError"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/invalid_input_entered"
-            android:textColor="?colorPrimary"
-            android:visibility="invisible"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/login_etPassword"
-            tools:visibility="visible" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
+    <!-- Login button -->
     <Button
         android:id="@+id/login_btnLogin"
         android:layout_marginHorizontal="20dp"
@@ -139,7 +115,7 @@
         android:text="@string/login"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/login_constraintLayoutPassword"
+        app:layout_constraintTop_toBottomOf="@id/login_tvPasswordError"
         style="@style/primaryButton"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,44 +6,33 @@
     android:layout_height="match_parent"
     tools:context=".CreditsActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/credits_constraintLayoutActions"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
+    <!-- Back button -->
+    <ImageButton
+        android:id="@+id/credits_btnBack"
+        android:background="@null"
+        android:contentDescription="@string/back"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/backButton" />
 
-        <ImageButton
-            android:id="@+id/credits_btnBack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@null"
-            android:contentDescription="@string/back"
-            android:src="@drawable/ic_arrow_back"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <!-- Credits text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/credits"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="8dp"
-            android:text="@string/credits"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
+    <!-- Darren -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/credits_constraintLayoutDarren"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/credits_constraintLayoutActions"
+        app:layout_constraintTop_toBottomOf="@id/credits_btnBack"
         style="@style/credits_item">
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -61,7 +50,7 @@
             android:layout_marginStart="16dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/credits_profilePictureDarren"
+            app:layout_constraintStart_toEndOf="@id/credits_profilePictureDarren"
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
@@ -80,10 +69,11 @@
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!-- Elfajar -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/credits_constraintLayoutElfajar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/credits_constraintLayoutDarren"
+        app:layout_constraintTop_toBottomOf="@id/credits_constraintLayoutDarren"
         style="@style/credits_item">
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -101,7 +91,7 @@
             android:layout_marginStart="16dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/credits_profilePictureElfajar"
+            app:layout_constraintStart_toEndOf="@id/credits_profilePictureElfajar"
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
@@ -120,10 +110,11 @@
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!-- Gilang -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/credits_constraintLayoutGilang"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/credits_constraintLayoutElfajar"
+        app:layout_constraintTop_toBottomOf="@id/credits_constraintLayoutElfajar"
         style="@style/credits_item">
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -141,7 +132,7 @@
             android:layout_marginStart="16dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/credits_profilePictureGilang"
+            app:layout_constraintStart_toEndOf="@id/credits_profilePictureGilang"
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
@@ -160,10 +151,11 @@
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!-- Nehemia -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/credits_constraintLayoutNehemia"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/credits_constraintLayoutGilang"
+        app:layout_constraintTop_toBottomOf="@id/credits_constraintLayoutGilang"
         style="@style/credits_item">
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -181,7 +173,7 @@
             android:layout_marginStart="16dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/credits_profilePictureNehemia"
+            app:layout_constraintStart_toEndOf="@id/credits_profilePictureNehemia"
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
@@ -200,10 +192,11 @@
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!-- Norbertus -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/credits_constraintLayoutNorbertus"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/credits_constraintLayoutNehemia"
+        app:layout_constraintTop_toBottomOf="@id/credits_constraintLayoutNehemia"
         style="@style/credits_item">
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -221,7 +214,7 @@
             android:layout_marginStart="16dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/credits_profilePictureNorbertus"
+            app:layout_constraintStart_toEndOf="@id/credits_profilePictureNorbertus"
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView

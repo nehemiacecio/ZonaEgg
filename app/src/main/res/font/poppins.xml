@@ -3,17 +3,17 @@
     <font
         android:fontStyle="normal"
         android:fontWeight="400"
-        android:font="@font/Poppins_Regular" />
+        android:font="@font/poppins_regular" />
     <font
         android:fontStyle="italic"
         android:fontWeight="400"
-        android:font="@font/Poppins_Italic" />
+        android:font="@font/poppins_italic" />
     <font
         android:fontStyle="normal"
         android:fontWeight="700"
-        android:font="@font/Poppins_Bold" />
+        android:font="@font/poppins_bold" />
     <font
         android:fontStyle="italic"
         android:fontWeight="700"
-        android:font="@font/Poppins_BoldItalic" />
+        android:font="@font/poppins_bold_italic" />
 </font-family>

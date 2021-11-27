@@ -6,56 +6,42 @@
     android:layout_height="match_parent"
     tools:context=".SettingsActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/settings_constraintLayoutActions"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
+    <ImageButton
+        android:id="@+id/settings_btnBack"
+        android:contentDescription="@string/back"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        style="@style/primaryBackButton" />
 
-        <ImageButton
-            android:id="@+id/settings_btnBack"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@null"
-            android:contentDescription="@string/back"
-            android:src="@drawable/ic_arrow_back"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="@string/settings"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/settings_btnDarkTheme"
+        app:layout_constraintStart_toEndOf="@id/settings_btnBack"
+        app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="8dp"
-            android:text="@string/settings"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/settings_btnDarkTheme"
-            app:layout_constraintStart_toEndOf="@+id/settings_btnBack"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageButton
-            android:id="@+id/settings_btnDarkTheme"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@null"
-            android:contentDescription="@string/toggle_dark_theme"
-            android:padding="4dp"
-            android:src="@drawable/ic_moon"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageButton
+        android:id="@+id/settings_btnDarkTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@null"
+        android:contentDescription="@string/toggle_dark_theme"
+        android:padding="4dp"
+        android:src="@drawable/ic_moon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/settings_constraintLayoutProfile"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/settings_constraintLayoutActions"
+        app:layout_constraintTop_toBottomOf="@id/settings_btnBack"
         style="@style/m_top_40">
 
         <de.hdodenhof.circleimageview.CircleImageView
@@ -73,7 +59,7 @@
             android:layout_marginStart="16dp"
             android:orientation="vertical"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/settings_profilePicture"
+            app:layout_constraintStart_toEndOf="@id/settings_profilePicture"
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
@@ -131,7 +117,7 @@
             android:layout_marginStart="16dp"
             android:text="@string/getting_started"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/settings_imgGettingStarted"
+            app:layout_constraintStart_toEndOf="@id/settings_imgGettingStarted"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
@@ -171,7 +157,7 @@
             android:layout_marginStart="16dp"
             android:text="@string/homepage"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/settings_imgHomepage"
+            app:layout_constraintStart_toEndOf="@id/settings_imgHomepage"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
@@ -211,7 +197,7 @@
             android:layout_marginStart="16dp"
             android:text="@string/popular_places"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/settings_imgPopularPlaces"
+            app:layout_constraintStart_toEndOf="@id/settings_imgPopularPlaces"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
@@ -251,7 +237,7 @@
             android:layout_marginStart="16dp"
             android:text="@string/your_favorites"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/settings_imgYourFavorites"
+            app:layout_constraintStart_toEndOf="@id/settings_imgYourFavorites"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
@@ -291,7 +277,7 @@
             android:layout_marginStart="16dp"
             android:text="@string/credits"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/settings_imgCredits"
+            app:layout_constraintStart_toEndOf="@id/settings_imgCredits"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageButton
