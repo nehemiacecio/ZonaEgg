@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".SettingsActivity">
 
+    <!-- Back button -->
     <ImageButton
         android:id="@+id/settings_btnBack"
         android:contentDescription="@string/back"
@@ -13,6 +14,7 @@
         app:layout_constraintTop_toTopOf="parent"
         style="@style/primaryBackButton" />
 
+    <!-- Settings text -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -25,6 +27,7 @@
         app:layout_constraintStart_toEndOf="@id/settings_btnBack"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!-- Dark theme toggle -->
     <ImageButton
         android:id="@+id/settings_btnDarkTheme"
         android:layout_width="wrap_content"
@@ -38,259 +41,226 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/settings_constraintLayoutProfile"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/settings_btnBack"
-        style="@style/m_top_40">
-
-        <de.hdodenhof.circleimageview.CircleImageView
-            android:id="@+id/settings_profilePicture"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
-            android:background="?colorPrimary"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/settings_profilePicture"
-            app:layout_constraintTop_toTopOf="parent">
-
-            <TextView
-                android:id="@+id/settings_tvUsername"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/lorem_ipsum"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/edit_profile"
-                android:textSize="13sp"
-                android:textColor="?neutral3"/>
-        </LinearLayout>
-
-        <ImageButton
-            android:id="@+id/settings_btnViewProfile"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@null"
-            android:contentDescription="@string/view_profile"
-            android:padding="4dp"
-            android:src="@drawable/ic_eye"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/settings_constraintLayoutGettingStarted"
+    <!-- Profile picture -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/settings_profilePicture"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:background="?colorPrimary"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/settings_constraintLayoutProfile"
-        style="@style/p_vertical_16">
+        app:layout_constraintTop_toBottomOf="@id/settings_btnBack" />
 
-        <ImageView
-            android:id="@+id/settings_imgGettingStarted"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@null"
-            android:contentDescription="@string/getting_started"
-            android:padding="6dp"
-            android:src="@drawable/ic_image"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <!-- Username -->
+    <TextView
+        android:id="@+id/settings_tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/lorem_ipsum"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/settings_profilePicture"
+        app:layout_constraintTop_toBottomOf="@id/settings_btnBack"/>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="@string/getting_started"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/settings_imgGettingStarted"
-            app:layout_constraintTop_toTopOf="parent" />
+    <!-- Edit profile text -->
+    <TextView
+        android:id="@+id/settings_tvEditProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="@string/edit_profile"
+        android:textColor="?neutral3"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@id/settings_profilePicture"
+        app:layout_constraintTop_toBottomOf="@id/settings_tvUsername"/>
 
-        <ImageButton
-            android:id="@+id/settings_btnNext1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@null"
-            android:contentDescription="@string/getting_started"
-            android:src="@drawable/ic_arrow_next"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/settings_constraintLayoutHomepage"
+    <!-- View profile button -->
+    <ImageButton
+        android:id="@+id/settings_btnViewProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:background="@null"
+        android:contentDescription="@string/view_profile"
+        android:padding="4dp"
+        android:src="@drawable/ic_eye"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_profilePicture"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/settings_profilePicture" />
+
+    <!-- Getting started -->
+    <ImageView
+        android:id="@+id/settings_imgGettingStarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="@null"
+        android:contentDescription="@string/getting_started"
+        android:padding="6dp"
+        android:src="@drawable/ic_image"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_btnNext1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/settings_constraintLayoutGettingStarted"
-        style="@style/p_vertical_16">
+        app:layout_constraintTop_toTopOf="@+id/settings_btnNext1" />
 
-        <ImageView
-            android:id="@+id/settings_imgHomepage"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@null"
-            android:contentDescription="@string/homepage"
-            android:padding="6dp"
-            android:src="@drawable/ic_home"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/getting_started"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_btnNext1"
+        app:layout_constraintStart_toEndOf="@id/settings_imgGettingStarted"
+        app:layout_constraintTop_toTopOf="@+id/settings_btnNext1" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="@string/homepage"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/settings_imgHomepage"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageButton
-            android:id="@+id/settings_btnNext2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@null"
-            android:contentDescription="@string/homepage"
-            android:src="@drawable/ic_arrow_next"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/settings_constraintLayoutPopularPlaces"
+    <ImageButton
+        android:id="@+id/settings_btnNext1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:padding="16dp"
+        android:background="@null"
+        android:contentDescription="@string/getting_started"
+        android:src="@drawable/ic_arrow_next"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_profilePicture" />
+
+    <!-- Homepage -->
+    <ImageView
+        android:id="@+id/settings_imgHomepage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="@null"
+        android:contentDescription="@string/homepage"
+        android:padding="6dp"
+        android:src="@drawable/ic_home"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_btnNext2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/settings_constraintLayoutHomepage"
-        style="@style/p_vertical_16">
+        app:layout_constraintTop_toTopOf="@+id/settings_btnNext2" />
 
-        <ImageView
-            android:id="@+id/settings_imgPopularPlaces"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@null"
-            android:contentDescription="@string/popular_places"
-            android:padding="6dp"
-            android:src="@drawable/ic_restaurant"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/homepage"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_btnNext2"
+        app:layout_constraintStart_toEndOf="@id/settings_imgHomepage"
+        app:layout_constraintTop_toTopOf="@+id/settings_btnNext2" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="@string/popular_places"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/settings_imgPopularPlaces"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageButton
-            android:id="@+id/settings_btnNext3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@null"
-            android:contentDescription="@string/popular_places"
-            android:src="@drawable/ic_arrow_next"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/settings_constraintLayoutYourFavorites"
+    <ImageButton
+        android:id="@+id/settings_btnNext2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@null"
+        android:contentDescription="@string/homepage"
+        android:src="@drawable/ic_arrow_next"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_btnNext1" />
+
+    <!-- Popular places -->
+    <ImageView
+        android:id="@+id/settings_imgPopularPlaces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="@null"
+        android:contentDescription="@string/popular_places"
+        android:padding="6dp"
+        android:src="@drawable/ic_restaurant"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_btnNext3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/settings_constraintLayoutPopularPlaces"
-        style="@style/p_vertical_16">
+        app:layout_constraintTop_toTopOf="@+id/settings_btnNext3" />
 
-        <ImageView
-            android:id="@+id/settings_imgYourFavorites"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@null"
-            android:contentDescription="@string/your_favorites"
-            android:padding="6dp"
-            android:src="@drawable/ic_favorite"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/popular_places"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_btnNext3"
+        app:layout_constraintStart_toEndOf="@id/settings_imgHomepage"
+        app:layout_constraintTop_toTopOf="@+id/settings_btnNext3" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="@string/your_favorites"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/settings_imgYourFavorites"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageButton
-            android:id="@+id/settings_btnNext4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@null"
-            android:contentDescription="@string/your_favorites"
-            android:src="@drawable/ic_arrow_next"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/settings_constraintLayoutCredits"
+    <ImageButton
+        android:id="@+id/settings_btnNext3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@null"
+        android:contentDescription="@string/popular_places"
+        android:src="@drawable/ic_arrow_next"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_btnNext2" />
+
+    <!-- Your favorites -->
+    <ImageView
+        android:id="@+id/settings_imgYourFavorites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="@null"
+        android:contentDescription="@string/your_favorites"
+        android:padding="6dp"
+        android:src="@drawable/ic_favorite"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_btnNext4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/settings_constraintLayoutYourFavorites"
-        style="@style/p_vertical_16">
+        app:layout_constraintTop_toTopOf="@+id/settings_btnNext4" />
 
-        <ImageView
-            android:id="@+id/settings_imgCredits"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@null"
-            android:contentDescription="@string/credits"
-            android:padding="6dp"
-            android:src="@drawable/ic_credits"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/your_favorites"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_btnNext4"
+        app:layout_constraintStart_toEndOf="@id/settings_imgHomepage"
+        app:layout_constraintTop_toTopOf="@+id/settings_btnNext4" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
-            android:text="@string/credits"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/settings_imgCredits"
-            app:layout_constraintTop_toTopOf="parent" />
+    <ImageButton
+        android:id="@+id/settings_btnNext4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@null"
+        android:contentDescription="@string/your_favorites"
+        android:src="@drawable/ic_arrow_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_btnNext3" />
 
-        <ImageButton
-            android:id="@+id/settings_btnNext5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@null"
-            android:contentDescription="@string/credits"
-            android:src="@drawable/ic_arrow_next"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Credits -->
+    <ImageView
+        android:id="@+id/settings_imgCredits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:background="@null"
+        android:contentDescription="@string/credits"
+        android:padding="6dp"
+        android:src="@drawable/ic_credits"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_btnNext5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/settings_btnNext5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/credits"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_btnNext5"
+        app:layout_constraintStart_toEndOf="@id/settings_imgHomepage"
+        app:layout_constraintTop_toTopOf="@+id/settings_btnNext5" />
+
+    <ImageButton
+        android:id="@+id/settings_btnNext5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@null"
+        android:contentDescription="@string/credits"
+        android:src="@drawable/ic_arrow_next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/settings_btnNext4" />
 
     <Button
         android:text="@string/logout"

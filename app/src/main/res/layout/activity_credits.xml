@@ -44,29 +44,27 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/credits_tvNameDarren"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/credits_profilePictureDarren"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/darren_name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/credits_profilePictureDarren"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/credits_tvNameDarren"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/darren_name"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/darren_nim"
-                android:textSize="13sp" />
-        </LinearLayout>
+        <TextView
+            android:id="@+id/credits_tvNimDarren"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/darren_nim"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/credits_profilePictureDarren"
+            app:layout_constraintTop_toBottomOf="@id/credits_tvNameDarren" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!-- Elfajar -->
@@ -85,29 +83,27 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/credits_tvNameElfajar"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/credits_profilePictureElfajar"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/elfajar_name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/credits_profilePictureElfajar"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/credits_tvNameElfajar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/elfajar_name"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/elfajar_nim"
-                android:textSize="13sp" />
-        </LinearLayout>
+        <TextView
+            android:id="@+id/credits_tvNimElfajar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/elfajar_nim"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/credits_profilePictureElfajar"
+            app:layout_constraintTop_toBottomOf="@id/credits_tvNameElfajar" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!-- Gilang -->
@@ -126,29 +122,27 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/credits_tvNameGilang"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/credits_profilePictureGilang"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/gilang_name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/credits_profilePictureGilang"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/credits_tvNameGilang"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/gilang_name"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/gilang_nim"
-                android:textSize="13sp" />
-        </LinearLayout>
+        <TextView
+            android:id="@+id/credits_tvNimGilang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/gilang_nim"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/credits_profilePictureGilang"
+            app:layout_constraintTop_toBottomOf="@id/credits_tvNameGilang" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!-- Nehemia -->
@@ -167,29 +161,27 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/credits_tvNameNehemia"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/credits_profilePictureNehemia"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/nehemia_name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/credits_profilePictureNehemia"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/credits_tvNameNehemia"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/nehemia_name"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/nehemia_nim"
-                android:textSize="13sp" />
-        </LinearLayout>
+        <TextView
+            android:id="@+id/credits_tvNimNehemia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/nehemia_nim"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/credits_profilePictureNehemia"
+            app:layout_constraintTop_toBottomOf="@id/credits_tvNameNehemia" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!-- Norbertus -->
@@ -208,29 +200,27 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/credits_tvNameNorbertus"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginStart="16dp"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toEndOf="@id/credits_profilePictureNorbertus"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/norbertus_name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/credits_profilePictureNorbertus"
+            app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/credits_tvNameNorbertus"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/norbertus_name"
-                android:textSize="16sp"
-                android:textStyle="bold" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/norbertus_name"
-                android:textSize="13sp" />
-        </LinearLayout>
+        <TextView
+            android:id="@+id/credits_tvNimNorbertus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:text="@string/norbertus_nim"
+            android:textSize="13sp"
+            app:layout_constraintStart_toEndOf="@+id/credits_profilePictureNorbertus"
+            app:layout_constraintTop_toBottomOf="@id/credits_tvNameNorbertus" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
