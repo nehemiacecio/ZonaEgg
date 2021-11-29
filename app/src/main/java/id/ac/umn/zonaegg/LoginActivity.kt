@@ -15,7 +15,7 @@ class LoginActivity : AppCompatActivity() {
 
         // Back button
         binding.loginBtnBack.setOnClickListener {
-
+            finish()
         }
 
         // Login button

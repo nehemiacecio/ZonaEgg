@@ -16,7 +16,7 @@ class SettingsActivity : AppCompatActivity() {
 
         // Back button
         binding.settingsBtnBack.setOnClickListener {
-
+            finish()
         }
 
         // Dark theme button

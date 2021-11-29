@@ -15,7 +15,7 @@ class CreditsActivity : AppCompatActivity() {
 
         // Back button
         binding.creditsBtnBack.setOnClickListener {
-
+            finish()
         }
     }
 }

@@ -1,5 +1,6 @@
 package id.ac.umn.zonaegg
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import id.ac.umn.zonaegg.databinding.ActivityRegisterBinding
@@ -15,7 +16,7 @@ class RegisterActivity : AppCompatActivity() {
 
         // Back button
         binding.registerBtnBack.setOnClickListener {
-
+            finish()
         }
 
         // Register button
