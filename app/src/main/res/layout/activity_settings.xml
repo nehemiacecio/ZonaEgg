@@ -101,21 +101,21 @@
         android:contentDescription="@string/getting_started"
         android:padding="6dp"
         android:src="@drawable/ic_image"
-        app:layout_constraintBottom_toBottomOf="@+id/settings_btnNext1"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_btnGettingStarted"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/settings_btnNext1" />
+        app:layout_constraintTop_toTopOf="@+id/settings_btnGettingStarted" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="@string/getting_started"
-        app:layout_constraintBottom_toBottomOf="@+id/settings_btnNext1"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_btnGettingStarted"
         app:layout_constraintStart_toEndOf="@id/settings_imgGettingStarted"
-        app:layout_constraintTop_toTopOf="@+id/settings_btnNext1" />
+        app:layout_constraintTop_toTopOf="@+id/settings_btnGettingStarted" />
 
     <ImageButton
-        android:id="@+id/settings_btnNext1"
+        android:id="@+id/settings_btnGettingStarted"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
@@ -136,21 +136,21 @@
         android:contentDescription="@string/homepage"
         android:padding="6dp"
         android:src="@drawable/ic_home"
-        app:layout_constraintBottom_toBottomOf="@+id/settings_btnNext2"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_btnHomepage"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/settings_btnNext2" />
+        app:layout_constraintTop_toTopOf="@+id/settings_btnHomepage" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="@string/homepage"
-        app:layout_constraintBottom_toBottomOf="@+id/settings_btnNext2"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_btnHomepage"
         app:layout_constraintStart_toEndOf="@id/settings_imgHomepage"
-        app:layout_constraintTop_toTopOf="@+id/settings_btnNext2" />
+        app:layout_constraintTop_toTopOf="@+id/settings_btnHomepage" />
 
     <ImageButton
-        android:id="@+id/settings_btnNext2"
+        android:id="@+id/settings_btnHomepage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="16dp"
@@ -158,7 +158,7 @@
         android:contentDescription="@string/homepage"
         android:src="@drawable/ic_arrow_next"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/settings_btnNext1" />
+        app:layout_constraintTop_toBottomOf="@id/settings_btnGettingStarted" />
 
     <!-- Popular places -->
     <ImageView
@@ -170,21 +170,21 @@
         android:contentDescription="@string/popular_places"
         android:padding="6dp"
         android:src="@drawable/ic_restaurant"
-        app:layout_constraintBottom_toBottomOf="@+id/settings_btnNext3"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_btnPopularPlaces"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/settings_btnNext3" />
+        app:layout_constraintTop_toTopOf="@+id/settings_btnPopularPlaces" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="@string/popular_places"
-        app:layout_constraintBottom_toBottomOf="@+id/settings_btnNext3"
-        app:layout_constraintStart_toEndOf="@id/settings_imgHomepage"
-        app:layout_constraintTop_toTopOf="@+id/settings_btnNext3" />
+        app:layout_constraintBottom_toBottomOf="@+id/settings_btnPopularPlaces"
+        app:layout_constraintStart_toEndOf="@id/settings_imgPopularPlaces"
+        app:layout_constraintTop_toTopOf="@+id/settings_btnPopularPlaces" />
 
     <ImageButton
-        android:id="@+id/settings_btnNext3"
+        android:id="@+id/settings_btnPopularPlaces"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="16dp"
@@ -192,7 +192,7 @@
         android:contentDescription="@string/popular_places"
         android:src="@drawable/ic_arrow_next"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/settings_btnNext2" />
+        app:layout_constraintTop_toBottomOf="@id/settings_btnHomepage" />
 
     <!-- Your favorites -->
     <ImageView
@@ -204,21 +204,21 @@
         android:contentDescription="@string/your_favorites"
         android:padding="6dp"
         android:src="@drawable/ic_favorite"
-        app:layout_constraintBottom_toBottomOf="@+id/settings_btnNext4"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_btnYourFavorites"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/settings_btnNext4" />
+        app:layout_constraintTop_toTopOf="@+id/settings_btnYourFavorites" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="@string/your_favorites"
-        app:layout_constraintBottom_toBottomOf="@+id/settings_btnNext4"
-        app:layout_constraintStart_toEndOf="@id/settings_imgHomepage"
-        app:layout_constraintTop_toTopOf="@+id/settings_btnNext4" />
+        app:layout_constraintBottom_toBottomOf="@+id/settings_btnYourFavorites"
+        app:layout_constraintStart_toEndOf="@id/settings_imgYourFavorites"
+        app:layout_constraintTop_toTopOf="@+id/settings_btnYourFavorites" />
 
     <ImageButton
-        android:id="@+id/settings_btnNext4"
+        android:id="@+id/settings_btnYourFavorites"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="16dp"
@@ -226,7 +226,7 @@
         android:contentDescription="@string/your_favorites"
         android:src="@drawable/ic_arrow_next"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/settings_btnNext3" />
+        app:layout_constraintTop_toBottomOf="@id/settings_btnPopularPlaces" />
 
     <!-- Credits -->
     <ImageView
@@ -238,21 +238,21 @@
         android:contentDescription="@string/credits"
         android:padding="6dp"
         android:src="@drawable/ic_credits"
-        app:layout_constraintBottom_toBottomOf="@+id/settings_btnNext5"
+        app:layout_constraintBottom_toBottomOf="@+id/settings_btnCredits"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/settings_btnNext5" />
+        app:layout_constraintTop_toTopOf="@+id/settings_btnCredits" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:text="@string/credits"
-        app:layout_constraintBottom_toBottomOf="@+id/settings_btnNext5"
-        app:layout_constraintStart_toEndOf="@id/settings_imgHomepage"
-        app:layout_constraintTop_toTopOf="@+id/settings_btnNext5" />
+        app:layout_constraintBottom_toBottomOf="@+id/settings_btnCredits"
+        app:layout_constraintStart_toEndOf="@id/settings_imgCredits"
+        app:layout_constraintTop_toTopOf="@+id/settings_btnCredits" />
 
     <ImageButton
-        android:id="@+id/settings_btnNext5"
+        android:id="@+id/settings_btnCredits"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="16dp"
@@ -260,7 +260,7 @@
         android:contentDescription="@string/credits"
         android:src="@drawable/ic_arrow_next"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/settings_btnNext4" />
+        app:layout_constraintTop_toBottomOf="@id/settings_btnYourFavorites" />
 
     <Button
         android:text="@string/logout"

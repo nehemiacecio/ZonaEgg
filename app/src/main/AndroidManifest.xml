@@ -11,7 +11,8 @@
         android:theme="@style/Theme.ZonaEgg">
         <activity
             android:name=".CreditsActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".SettingsActivity" />
         <activity
             android:name=".SettingsActivity"
             android:exported="false" />
