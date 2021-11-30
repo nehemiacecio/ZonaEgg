@@ -49,4 +49,11 @@
     <string name="credits">Credits</string>
     <string name="logout">Logout</string>
 
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--    Getting Started-->
+    <string name="str_getting_started">Getting Started</string>
+    <string name="str_started_title">ZonaEgg</string>
+    <string name="str_started_welcome">Welcome to ZonaEgg</string>
+
 </resources>

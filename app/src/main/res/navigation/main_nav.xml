@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="id.ac.umn.zonaegg.getting_started.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_started0Fragment"
+            app:destination="@id/started0Fragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/started0Fragment"
+        android:name="id.ac.umn.zonaegg.getting_started.Started0Fragment"
+        android:label="fragment_started0"
+        tools:layout="@layout/fragment_started0" >
+        <action
+            android:id="@+id/action_started0Fragment_to_startedViewPagerFragment2"
+            app:destination="@id/startedViewPagerFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/startedViewPagerFragment2"
+        android:name="id.ac.umn.zonaegg.getting_started.StartedViewPagerFragment"
+        android:label="fragment_started_view_pager"
+        tools:layout="@layout/fragment_started_view_pager" />
+</navigation>
