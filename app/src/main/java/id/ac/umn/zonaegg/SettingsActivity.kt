@@ -3,6 +3,7 @@ package id.ac.umn.zonaegg
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatDelegate
 import id.ac.umn.zonaegg.databinding.ActivitySettingsBinding
 
 class SettingsActivity : AppCompatActivity() {
@@ -21,7 +22,12 @@ class SettingsActivity : AppCompatActivity() {
 
         // Dark theme button
         binding.settingsBtnDarkTheme.setOnClickListener {
-
+            // If night mode is active
+            if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES)
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            // If night mode is not active
+            else
+                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
         }
 
         // Getting started button
@@ -32,7 +38,7 @@ class SettingsActivity : AppCompatActivity() {
 
         // Homepage button
         binding.settingsBtnHomepage.setOnClickListener {
-
+            finish()
         }
 
         // Popular places button
