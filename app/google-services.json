@@ -1,0 +1,143 @@
+{
+  "project_info": {
+    "project_number": "619114856130",
+    "firebase_url": "https://zonaegg-8bf3b-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "zonaegg-8bf3b",
+    "storage_bucket": "zonaegg-8bf3b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619114856130:android:bc848be47d831b40d0c55b",
+        "android_client_info": {
+          "package_name": "com.example.bitamirshafiee.chatappskeleton"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619114856130-uhkud4s1628nfucpju6aa0m1akns2bc8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTID1VjhfpQ3krVSW1chDcdgERhS1nz3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619114856130-uhkud4s1628nfucpju6aa0m1akns2bc8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619114856130:android:0a7f0a34f61cfda2d0c55b",
+        "android_client_info": {
+          "package_name": "com.trial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619114856130-uhkud4s1628nfucpju6aa0m1akns2bc8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTID1VjhfpQ3krVSW1chDcdgERhS1nz3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619114856130-uhkud4s1628nfucpju6aa0m1akns2bc8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619114856130:android:4f27bd9b77830140d0c55b",
+        "android_client_info": {
+          "package_name": "id.ac.umn.zonaegg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619114856130-q27eqea3jhnauckc0326jvjhlhunanpt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.ac.umn.zonaegg",
+            "certificate_hash": "72363a2b91c7332d3da6e69c4e59439516b792fa"
+          }
+        },
+        {
+          "client_id": "619114856130-uhkud4s1628nfucpju6aa0m1akns2bc8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTID1VjhfpQ3krVSW1chDcdgERhS1nz3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619114856130-uhkud4s1628nfucpju6aa0m1akns2bc8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:619114856130:android:f37f1c7bf6c5fb63d0c55b",
+        "android_client_info": {
+          "package_name": "id.ac.umn.zonaegg2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "619114856130-pfhtimb641r5m42ufiou8aaqh0jnceei.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.ac.umn.zonaegg2",
+            "certificate_hash": "15a4b5c445250d8e7bdba61b8cc5bfb39657816f"
+          }
+        },
+        {
+          "client_id": "619114856130-uhkud4s1628nfucpju6aa0m1akns2bc8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTID1VjhfpQ3krVSW1chDcdgERhS1nz3Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "619114856130-uhkud4s1628nfucpju6aa0m1akns2bc8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -29,5 +29,16 @@
         android:id="@+id/startedViewPagerFragment2"
         android:name="id.ac.umn.zonaegg.getting_started.StartedViewPagerFragment"
         android:label="fragment_started_view_pager"
-        tools:layout="@layout/fragment_started_view_pager" />
+        tools:layout="@layout/fragment_started_view_pager" >
+        <action
+            android:id="@+id/action_startedViewPagerFragment2_to_signInActivity"
+            app:destination="@id/signInActivity"/>
+    </fragment>
+    <fragment
+        android:id="@+id/signInActivity"
+        android:name="id.ac.umn.zonaegg.SignInActivity"
+        android:label="fragment_sign_in_activity"
+        tools:layout="@layout/activity_sign_in">
+    </fragment>
+
 </navigation>

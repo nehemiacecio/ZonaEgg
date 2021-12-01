@@ -3,12 +3,16 @@ package id.ac.umn.zonaegg
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.core.view.isVisible
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import id.ac.umn.zonaegg.databinding.ActivityLoginBinding
 import java.lang.Exception
 
 class LoginActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityLoginBinding
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,7 +54,9 @@ class LoginActivity : AppCompatActivity() {
 
             }
         }
+
     }
+
 
     private fun isLoginDataValid(email : String, password : String) : Boolean {
         if (email == "" || password == "")
