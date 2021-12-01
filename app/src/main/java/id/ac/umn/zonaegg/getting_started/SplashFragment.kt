@@ -1,5 +1,6 @@
 package id.ac.umn.zonaegg.getting_started
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -9,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import id.ac.umn.zonaegg.R
+import id.ac.umn.zonaegg.SignInActivity
 import id.ac.umn.zonaegg.databinding.FragmentSplashBinding
 
 class SplashFragment : Fragment() {
@@ -21,7 +23,10 @@ class SplashFragment : Fragment() {
         val bind = FragmentSplashBinding.inflate(inflater, container, false)
 
         Handler(Looper.getMainLooper()).postDelayed({
-            findNavController().navigate(R.id.action_splashFragment_to_started0Fragment)
+//            findNavController().navigate(R.id.action_splashFragment_to_started0Fragment)
+            val intent = Intent(requireContext(), SignInActivity::class.java)
+//            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TOP)
+            requireActivity().startActivity(intent)
         }, 1500)
 
 

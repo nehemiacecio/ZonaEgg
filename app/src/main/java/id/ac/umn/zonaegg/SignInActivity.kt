@@ -25,7 +25,7 @@ class SignInActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)
-         val btnGoogle : SignInButton = findViewById(R.id.btn_google)
+
 
         val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.webClientId))
@@ -34,15 +34,15 @@ class SignInActivity : AppCompatActivity() {
 
         googleSignInClient = GoogleSignIn.getClient(this, gso)
 
-        val signInButton : SignInButton = findViewById(R.id.btn_google)
-        signInButton.setOnClickListener {
+        val btnGoogle: SignInButton = findViewById(R.id.btn_google)
+        btnGoogle.setOnClickListener {
             signIn()
         }
     }
 
 
     private fun signIn() {
-        val signInIntent = googleSignInClient.signInIntent
+        var signInIntent = googleSignInClient.signInIntent
         startActivityForResult(signInIntent, 1001)
     }
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -53,7 +53,7 @@ class SignInActivity : AppCompatActivity() {
             val task = GoogleSignIn.getSignedInAccountFromIntent(data)
             try {
                 // Google Sign In was successful, authenticate with Firebase
-                val account = task.getResult(ApiException::class.java)!!
+                var account = task.getResult(ApiException::class.java)!!
                 Log.d("Google Sign In", "firebaseAuthWithGoogle:" + account.id)
                 firebaseAuthWithGoogle(account.idToken!!)
             } catch (e: ApiException) {
@@ -66,7 +66,7 @@ class SignInActivity : AppCompatActivity() {
         auth = Firebase.auth
     }
     private fun firebaseAuthWithGoogle(idToken: String) {
-        val credential = GoogleAuthProvider.getCredential(idToken, null)
+        var credential = GoogleAuthProvider.getCredential(idToken, null)
         auth.signInWithCredential(credential)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
@@ -86,7 +86,7 @@ class SignInActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         // Check if user is signed in (non-null) and update UI accordingly.
-        val currentUser = auth.currentUser
+        var currentUser = auth.currentUser
         updateUI(currentUser)
     }
 
